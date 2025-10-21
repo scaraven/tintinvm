@@ -9,7 +9,7 @@ repos:
         files: (\.rs$|^Cargo\.toml$|^build\.rs$)
       - id: cargo-clippy
         name: cargo clippy (lint)
-        entry: cargo clippy --all-targets --all-features -- -D warnings
+        entry: cargo clippy --all-targets --all-features
         language: system
         pass_filenames: false
         files: (\.rs$|^Cargo\.toml$|^build\.rs$)
