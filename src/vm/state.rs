@@ -1,13 +1,21 @@
-// Define the VM state (registers, program counter, etc.)
+use crate::vm::instr::Instr;
+
+const MAX_STACK_SIZE: usize = 1024;
 
 pub struct VMState {
-    // TODO: add fields (e.g., stack, pc, memory)
+    pc: usize,
+    stack: [u64; MAX_STACK_SIZE],
+    sp: usize,
+    instr: Instr,
 }
 
 impl VMState {
-    pub fn new() -> Self {
+    pub fn new(pc: usize, instr: Instr, stack: [u64; MAX_STACK_SIZE], sp: usize) -> Self {
         Self {
-            // TODO: initialize state
+            pc,
+            stack,
+            sp,
+            instr,
         }
     }
 }

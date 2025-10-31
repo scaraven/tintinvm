@@ -2,5 +2,7 @@
 
 #[derive(Debug, Clone)]
 pub enum Instr {
-    // TODO: add opcodes like CONST, ADD, HALT
+    Const(u64),
+    Add,
+    Halt,
 }
