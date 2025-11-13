@@ -1,3 +1,4 @@
+mod constraints;
 mod crypto;
 mod vm;
 
