@@ -1,7 +1,4 @@
-mod constraints;
-mod prover;
-mod trace;
-mod verifier;
+mod crypto;
 mod vm;
 
 fn main() {
